@@ -1,9 +1,9 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def get_current_time() -> datetime:
-    """Return the current local time."""
-    return datetime.now()
+    """Return the current time in UTC."""
+    return datetime.now(timezone.utc)
 
 
 def format_timestamp(dt: datetime) -> str:
