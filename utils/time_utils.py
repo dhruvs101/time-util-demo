@@ -7,4 +7,4 @@ def get_current_time() -> datetime:
 
 
 def format_timestamp(dt: datetime) -> str:
-    return dt.strftime("%Y-%m-%d %H:%M:%S UTC")
+    return dt.strftime("%Y-%m-%d %I:%M:%S %p")
